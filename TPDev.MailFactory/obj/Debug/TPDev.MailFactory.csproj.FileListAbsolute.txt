@@ -1,0 +1,4 @@
+D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.MailFactory\bin\Debug\TPDev.MailFactory.dll
+D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.MailFactory\bin\Debug\TPDev.MailFactory.pdb
+D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.MailFactory\obj\Debug\TPDev.MailFactory.dll
+D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.MailFactory\obj\Debug\TPDev.MailFactory.pdb

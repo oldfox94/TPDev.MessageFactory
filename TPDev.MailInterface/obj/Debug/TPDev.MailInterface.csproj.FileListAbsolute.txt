@@ -1,4 +1,0 @@
-D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.MailInterface\bin\Debug\TPDev.MailInterface.dll
-D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.MailInterface\bin\Debug\TPDev.MailInterface.pdb
-D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.MailInterface\obj\Debug\TPDev.MailInterface.dll
-D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.MailInterface\obj\Debug\TPDev.MailInterface.pdb

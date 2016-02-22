@@ -1,4 +1,0 @@
-D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.SmsInterface\bin\Debug\TPDev.SmsInterface.dll
-D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.SmsInterface\bin\Debug\TPDev.SmsInterface.pdb
-D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.SmsInterface\obj\Debug\TPDev.SmsInterface.dll
-D:\Programming\VisualStudio\TPDev.MessageFactory\TPDev.SmsInterface\obj\Debug\TPDev.SmsInterface.pdb

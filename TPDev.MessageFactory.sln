@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPDev.MailFactory", "TPDev.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPDev.MailInterface", "TPDev.MailInterface\TPDev.MailInterface.csproj", "{C424F9E5-1F49-403F-BBE2-43CC56E5E606}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPDev.WebSMS", "TPDev.WebSMS\TPDev.WebSMS.csproj", "{7BB049D7-E6F2-4A5B-A4FD-87C917C3149E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{335E6CEF-6517-4602-B611-82249EE20A47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{C424F9E5-1F49-403F-BBE2-43CC56E5E606}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C424F9E5-1F49-403F-BBE2-43CC56E5E606}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C424F9E5-1F49-403F-BBE2-43CC56E5E606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB049D7-E6F2-4A5B-A4FD-87C917C3149E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB049D7-E6F2-4A5B-A4FD-87C917C3149E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB049D7-E6F2-4A5B-A4FD-87C917C3149E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB049D7-E6F2-4A5B-A4FD-87C917C3149E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335E6CEF-6517-4602-B611-82249EE20A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335E6CEF-6517-4602-B611-82249EE20A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335E6CEF-6517-4602-B611-82249EE20A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335E6CEF-6517-4602-B611-82249EE20A47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

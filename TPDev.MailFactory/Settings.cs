@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TPDev.MailFactory
 {
-    public class Class1
+    public class Settings
     {
+        public static MailFactory Factory { get; set; }
     }
 }

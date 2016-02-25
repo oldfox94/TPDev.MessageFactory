@@ -40,8 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="MailFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TPDev.MailInterface\TPDev.MailInterface.csproj">
+      <Project>{c424f9e5-1f49-403f-bbe2-43cc56e5e606}</Project>
+      <Name>TPDev.MailInterface</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TPDev.MailInterface\TPDev.MailInterface.csproj">

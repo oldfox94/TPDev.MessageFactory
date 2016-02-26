@@ -46,3 +46,7 @@ TPDev.WebSMS/bin/Debug/TPDev.SmsInterface.pdb
 TPDev.WebSMS/bin/Debug/TPDev.WebSMS.dll
 TPDev.WebSMS/bin/Debug/TPDev.WebSMS.pdb
 TPDev.WebSMS/bin/Debug/WebsmsToolkitCS.dll
+TPDev.SmsFactory/TPDev.SmsFactory_BACKUP_7108.csproj
+TPDev.SmsFactory/TPDev.SmsFactory_BASE_7108.csproj
+TPDev.SmsFactory/TPDev.SmsFactory_LOCAL_7108.csproj
+TPDev.SmsFactory/TPDev.SmsFactory_REMOTE_7108.csproj

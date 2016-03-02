@@ -16,12 +16,18 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.ColumnSpan="4" Orientation="Horizontal">
-            <Button Content="Send Sms" MaxWidth="120" Click="OnSendSmsClick"/>
-        </StackPanel>
+        <Label Grid.Column="0" Content="Number:" Margin="2,4"/>
+        <TextBox Grid.Column="1" Name="txtPhoneNr" MinWidth="120" Margin="2,4"/>
+        
+        <Label Grid.Row="1" Grid.Column="0" Content="Message:" Margin="2,4"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtMessage" MinWidth="250" Margin="2,4"/>
+
+        <Button Grid.Row="2" Grid.Column="2" Content="Send Sms" MaxWidth="120" Click="OnSendSmsClick"/>
     </Grid>
 </Window>

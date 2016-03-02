@@ -45,6 +45,10 @@
     <Compile Include="SmsFactorySettings.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TPDev.SmsApi\TPDev.SmsApi.csproj">
+      <Project>{b4401908-5862-4b33-a3b9-f186d512ef07}</Project>
+      <Name>TPDev.SmsApi</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TPDev.SmsInterface\TPDev.SmsInterface.csproj">
       <Project>{cc1c1db8-1e48-4068-9cf4-cd8e5d387295}</Project>
       <Name>TPDev.SmsInterface</Name>

@@ -5,5 +5,7 @@ namespace TPDev.MailInterface.Interfaces
     public interface IProvider
     {
         ProviderConnectionData BuildConnectionData(ProviderConnectionData data);
+
+        ISender Sender { get; set; }
     }
 }

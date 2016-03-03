@@ -4,5 +4,9 @@ namespace TPDev.MailSender
 {
     public class MailSender : ISender
     {
+        public MailSender()
+        {
+
+        }
     }
 }

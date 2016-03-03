@@ -50,6 +50,10 @@
       <Project>{c424f9e5-1f49-403f-bbe2-43cc56e5e606}</Project>
       <Name>TPDev.MailInterface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TPDev.MailSender\TPDev.MailSender.csproj">
+      <Project>{288a3dcf-be13-4396-a7de-4522808415c3}</Project>
+      <Name>TPDev.MailSender</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TPDev.MailInterface\TPDev.MailInterface.csproj">

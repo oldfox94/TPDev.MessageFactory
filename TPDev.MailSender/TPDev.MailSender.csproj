@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C424F9E5-1F49-403F-BBE2-43CC56E5E606}</ProjectGuid>
+    <ProjectGuid>{288A3DCF-BE13-4396-A7DE-4522808415C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TPDev.MailInterface</RootNamespace>
-    <AssemblyName>TPDev.MailInterface</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>TPDev.MailSender</RootNamespace>
+    <AssemblyName>TPDev.MailSender</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -40,15 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Interfaces\IProvider.cs" />
-    <Compile Include="Interfaces\ISender.cs" />
-    <Compile Include="Models\Enums.cs" />
-    <Compile Include="Models\ServerConfigData.cs" />
-    <Compile Include="Models\ProviderConnectionData.cs" />
+    <Compile Include="MailSender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TPDev.MailInterface\TPDev.MailInterface.csproj">
+      <Project>{c424f9e5-1f49-403f-bbe2-43cc56e5e606}</Project>
+      <Name>TPDev.MailInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

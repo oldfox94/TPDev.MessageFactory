@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPDev.SmsApi", "TPDev.SmsApi\TPDev.SmsApi.csproj", "{B4401908-5862-4B33-A3B9-F186D512EF07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPDev.MailSender", "TPDev.MailSender\TPDev.MailSender.csproj", "{288A3DCF-BE13-4396-A7DE-4522808415C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B4401908-5862-4B33-A3B9-F186D512EF07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4401908-5862-4B33-A3B9-F186D512EF07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4401908-5862-4B33-A3B9-F186D512EF07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288A3DCF-BE13-4396-A7DE-4522808415C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288A3DCF-BE13-4396-A7DE-4522808415C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288A3DCF-BE13-4396-A7DE-4522808415C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288A3DCF-BE13-4396-A7DE-4522808415C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

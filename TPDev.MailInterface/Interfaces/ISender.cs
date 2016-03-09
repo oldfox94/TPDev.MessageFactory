@@ -1,7 +1,10 @@
-﻿namespace TPDev.MailInterface.Interfaces
+﻿using System.Collections.Generic;
+
+namespace TPDev.MailInterface.Interfaces
 {
     public interface ISender
     {
-        public bool Send()
+        bool Send(List<string> toList, string subject, string body, string from = null)
+        bool Send(string to, string subject, string body, string from = null);
     }
 }

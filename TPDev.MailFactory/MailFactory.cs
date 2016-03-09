@@ -12,14 +12,12 @@ namespace TPDev.MailFactory
 
         public MailFactory(MailProviderTypes type, ProviderConnectionData data)
         {
-            m_Sender = new MSender();
-
             switch (type)
             {
                 case MailProviderTypes.GMail:
                     Provider = new GmailProv();
                     data = Provider.BuildConnectionData(data);
-                    Provider.Sender = m_Sender;
+                    Provider.Sender = m_Sender = new MSender(data);
                     break;
             }
 

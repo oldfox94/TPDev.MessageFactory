@@ -1,14 +1,20 @@
-﻿using TPDev.MailInterface.Interfaces;
+﻿using System;
+using TPDev.MailInterface.Interfaces;
 using TPDev.MailInterface.Models;
 
 namespace TPDev.MailFactory.Providers
 {
     public class GmailProv : IProvider
     {
+        public ProviderConnectionData Data { get; set; }
+        public ISender Sender { get; set; }
+
         public ProviderConnectionData BuildConnectionData(ProviderConnectionData data)
         {
             var conData = new ProviderConnectionData
             {
+                MailFrom = string.IsNullOrEmpty(data.MailFrom) ? "noreplay@gmail.com" : data.MailFrom,
+
                 IncomingServer = new ServerConfigData
                 {
                     Name = data.IncomingServer != null && !string.IsNullOrEmpty(data.IncomingServer.Name) ? data.IncomingServer.Name : "imap.gmail.com",
@@ -26,7 +32,8 @@ namespace TPDev.MailFactory.Providers
                 },
             };
 
-            return conData;
+            Data = conData;
+            return Data;
         }
     }
 }

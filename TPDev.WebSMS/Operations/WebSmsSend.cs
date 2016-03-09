@@ -22,7 +22,7 @@ namespace TPDev.WebSMS.Operations
                 if (maxMessages == 0)
                     msgToSend = CheckMaxMessageCount(message);
 
-                var newClient = new SmsClient("tpDev", "R_190319940", "https://api.websms.com/json");
+                var newClient = new SmsClient("", "", "https://api.websms.com/json");
                 var response = newClient.Send(smsMessage, msgToSend, isTest);
 
                 return true;

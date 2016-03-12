@@ -1,5 +1,4 @@
-﻿using System;
-using TPDev.MailInterface.Interfaces;
+﻿using TPDev.MailInterface.Interfaces;
 using TPDev.MailInterface.Models;
 
 namespace TPDev.MailFactory.Providers

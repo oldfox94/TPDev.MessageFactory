@@ -1,2 +1,12 @@
 === MessageFactory ==
 +++++ CHANGELOG +++++
+
+V1.0.0.1:
+ADD		Basic Project structure Interfaces and Methodes added
+FIX		WebSMS is now working and return the right result
+		(https://www.websms.com)
+ADD		SmsApi Basic structure now implemented and working
+		(https://www.smsapi.com)
+UPD		Projects have now the same GlobalAssembly
+FIX		BuildRelease.cmd fixed
+ADD		Gmail Provider for E-Mails now implemented (Not tested!!)

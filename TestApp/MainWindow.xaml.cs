@@ -18,16 +18,16 @@ namespace TestApp
             var connectionData = new SmsConnectionData();
 
             //WebSMS
-            //connectionData.User = "";
-            //connectionData.Password = "";
+            connectionData.User = "";
+            connectionData.Password = "";
 
-            //m_smsFactory = new SmsFactory(SmsType.WebSMS, connectionData);
+            m_smsFactory = new SmsFactory(SmsType.WebSMS, connectionData);
 
             //SmsApi
-            connectionData.User = "";
-            connectionData.Password = ""; //You can get your MD5 Passwort @SmsApi Account Page
+            //connectionData.User = "";
+            //connectionData.Password = ""; //You can get your MD5 Passwort @SmsApi Account Page
 
-            m_smsFactory = new SmsFactory(SmsType.SmsApi, connectionData);
+            //m_smsFactory = new SmsFactory(SmsType.SmsApi, connectionData);
         }
 
         private void OnLoaded(object sender, RoutedEventArgs e)
@@ -44,6 +44,7 @@ namespace TestApp
             long.TryParse(txtPhoneNr.Text, out phoneNum);
 
             var result = m_smsFactory.Send.Send(phoneNum, txtMessage.Text, 0, true);
+            lblResponse.Content = result ? "Ok" : "Fehler";
         }
     }
 }

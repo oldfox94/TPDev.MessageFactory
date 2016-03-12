@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TPDev.SmsInterface.Interfaces;
 using Websms;
 
@@ -22,8 +18,9 @@ namespace TPDev.WebSMS.Operations
                 if (maxMessages == 0)
                     msgToSend = CheckMaxMessageCount(message);
 
-                var newClient = new SmsClient("", "", "https://api.websms.com/json");
-                var response = newClient.Send(smsMessage, msgToSend, isTest);
+                var response = Settings.Client.Send(smsMessage, msgToSend, isTest);
+                if (response.statusCode != StatusCode.OK)
+                    return false;
 
                 return true;
             }

@@ -7,8 +7,8 @@ namespace TPDev.MailFactory
 {
     public class MailFactory
     {
-        public static IProvider Provider { get; set; }
-        private static ISender m_Sender { get; set;}
+        public IProvider Provider { get; set; }
+        public ISender Sender { get; set;}
 
         public MailFactory(MailProviderTypes type, ProviderConnectionData data)
         {
@@ -17,7 +17,7 @@ namespace TPDev.MailFactory
                 case MailProviderTypes.GMail:
                     Provider = new GmailProv();
                     data = Provider.BuildConnectionData(data);
-                    Provider.Sender = m_Sender = new MSender(data);
+                    Provider.Sender = Sender = new MSender(data);
                     break;
             }
 

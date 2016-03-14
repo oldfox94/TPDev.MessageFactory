@@ -1,6 +1,15 @@
 === MessageFactory ==
 +++++ CHANGELOG +++++
 
+V1.0.0.2:
+FIX		BugFixes in MailSender -> Authendication added
+UPD		GMail Provider little fixes in configuration
+ADD		You can now define Default Username and Password; It is use in Incoming and Outgoing Serverconfig
+ADD		You can now define EnableSsl as default or in Incoming or Outgoing Serverconfig
+UPD		Little changes in MailFactory; Usability improvements
+UPD		In TestApp now you can test sms and e-mail
+
+
 V1.0.0.1:
 ADD		Basic Project structure Interfaces and Methodes added
 FIX		WebSMS is now working and return the right result

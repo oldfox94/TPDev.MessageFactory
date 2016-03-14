@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Mail;
 using TPDev.MailInterface.Interfaces;
 using TPDev.MailInterface.Models;
@@ -39,14 +40,20 @@ namespace TPDev.MailSender
             {
                 var mailFrom = string.IsNullOrEmpty(from) ? Settings.ProviderData.MailFrom : from;
 
-                MailMessage mail = new MailMessage(from, to);
-                SmtpClient client = new SmtpClient();
-                client.Port = Settings.ProviderData.OutgoingServer.Port;
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                client.UseDefaultCredentials = false;
-                client.Host = Settings.ProviderData.OutgoingServer.Name;
+                MailMessage mail = new MailMessage(mailFrom, to);
                 mail.Subject = subject;
                 mail.Body = body;
+
+                SmtpClient client = new SmtpClient();
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+
+                client.Host = Settings.ProviderData.OutgoingServer.Name;
+                client.Port = Settings.ProviderData.OutgoingServer.Port;
+                client.EnableSsl = Settings.ProviderData.OutgoingServer.EnableSsl;
+
+                client.UseDefaultCredentials = false;
+                client.Credentials = new NetworkCredential(Settings.ProviderData.OutgoingServer.Username, Settings.ProviderData.OutgoingServer.Password);
+
                 client.Send(mail);
 
                 return true;

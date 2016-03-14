@@ -132,3 +132,4 @@ TPDev.MailFactory/bin/Debug/TPDev.MailSender.dll
 TPDev.MailFactory/bin/Debug/TPDev.MailSender.pdb
 TPDev.MailFactory/bin/Release/TPDev.MailSender.dll
 TPDev.MailFactory/bin/Release/TPDev.MailSender.pdb
+TestApp/obj/Release/MainWindow.g.i.cs

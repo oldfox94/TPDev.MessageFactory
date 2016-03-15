@@ -8,6 +8,7 @@ ADD		You can now define Default Username and Password; It is use in Incoming and
 ADD		You can now define EnableSsl as default or in Incoming or Outgoing Serverconfig
 UPD		Little changes in MailFactory; Usability improvements
 UPD		In TestApp now you can test sms and e-mail
+ADD		GMX Provider added
 
 
 V1.0.0.1:

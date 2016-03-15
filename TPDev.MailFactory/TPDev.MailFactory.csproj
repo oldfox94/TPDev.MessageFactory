@@ -45,7 +45,9 @@
     </Compile>
     <Compile Include="MailFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\CustomProv.cs" />
     <Compile Include="Providers\GmailProv.cs" />
+    <Compile Include="Providers\GmxProv.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>
